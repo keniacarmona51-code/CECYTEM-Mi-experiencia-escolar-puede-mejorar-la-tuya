@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MI EXPERIENCIA ESCOLAR PUEDE MEJORAR LA TUTA</title>
 
+  <style>
+    body {
+      background-color: #1e1e2f;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    h1 {
+      color: #00d4ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>La etapa escolar es una de las más importantes en la vida de cualquier persona, ya que no solo se adquieren conocimientos académicos, sino también experiencias que forman el carácter y la manera de enfrentar los retos. A lo largo de mi trayectoria escolar he vivido momentos buenos y difíciles que me han dejado aprendizajes valiosos. Por eso, compartir mi experiencia puede ayudarte a evitar errores, aprovechar mejor tu tiempo y encontrar formas más efectivas de estudiar y convivir con los demás. Mi objetivo es que, a partir de lo que yo viví, tú puedas construir una experiencia escolar más positiva, organizada y exitosa.</h1>
+  <p>Esta es mi primera página web</p>
+
+  <img src="https://via.placeholder.com/200" alt="logo-cecytem.png">
+
+</body>
+</html>
