@@ -4,7 +4,186 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MI EXPERIENCIA ESCOLAR PUEDE MEJORAR LA TUYA</title>
+
 <style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#0d0d0d;
+  color:white;
+}
+.hero h1 {
+  margin-bottom: 5px;
+}
+
+.hero p {
+  margin-top: 0;
+}
+/* HEADER */
+.header{
+  background: linear-gradient(90deg,#000,#d4af37,#ff4da6);
+  padding:15px;
+  text-align:center;
+  font-weight:bold;
+  font-size:18px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  
+}
+
+/* CONTENIDO */
+.container{
+  padding:20px;
+  text-align:center;
+}
+
+/* TARJETAS */
+.card{
+  background:#1a1a1a;
+  margin:15px 0;
+  padding:20px;
+  border-radius:15px;
+  border-left:5px solid #d4af37;
+  box-shadow:0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* IMÁGENES Y VIDEO */
+.media{
+  margin-top:15px;
+}
+.media img, .media iframe{
+  width:100%;
+  max-width:400px;
+  border-radius:15px;
+  margin-top:10px;
+}
+
+/* BOTONES */
+.btn{
+  display:block;
+  background: linear-gradient(90deg,#ff4da6,#d4af37);
+  color:black;
+  padding:12px;
+  margin:10px 0;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* NAV INFERIOR */
+.bottom-nav{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:#111;
+  display:flex;
+  justify-content:space-around;
+  padding:10px 0;
+  border-top:2px solid #d4af37;
+}
+
+.bottom-nav a{
+  color:#ff4da6;
+  text-decoration:none;
+  font-size:13px;
+  text-align:center;
+}
+
+/* ESPACIO */
+.space{
+  height:70px;
+}
+</style>
+</head>
+  
+
 <body>
-background teal
-<img src="cecytem-logo.png> </img>
+
+<!-- HEADER -->
+<div class="header">
+ <h4> MI EXPERIENCIA ESCOLAR PUEDE MEJORAR LA TUYA<h4>
+</div>
+
+<!-- CONTENIDO -->
+
+<div class="container">
+  <img src="CECY.png" width= "350" heigth="350" alt="Plantel">
+<h3 style="font-family: 'Playfair Display', serif; font-size:28px; color:#ff4da6; text-align:center; letter-spacing:1px;"> PLANTEL VALLE DE BRAVO </h3>
+ <h3 style="font-family: 'Great Vibes', cursive; font-size:32px; color:#d4af37; text-align:center; letter-spacing:2px;"> Mtra.Irma G. </h3>
+<h3 style="font-family: 'Playfair Display', serif; font-size:28px; color:#ff4da6; text-align:center; letter-spacing:1px;"> EL  ABANDONO ESCOLAR SI TIENE SOLUCIÓN </h3>
+ <h6>-  - </h6>
+
+<!-- IMAGEN PRINCIPAL -->
+<div class="media">
+
+ <h4 style="font-family: 'Great Vibes', cursive; font-size:32px; color:#d4af37; text-align:center; letter-spacing:2px;"> A B A N D O N O   <br> E S C O L A R.</h4>
+</div>
+
+<div class="card">
+  <h3>¿Qué es?</h3>
+  <p>Es cuando un estudiante deja la escuela antes de terminar sus estudios.</p>
+</div>
+
+<div class="card">
+  <h3>¿Por qué ocurre?</h3>
+  <p>Problemas económicos, falta de motivación, situaciones familiares y bajo rendimiento académico.</p>
+</div>
+
+<div class="card">
+  <h3>Consecuencias</h3>
+  <p>Menores oportunidades laborales, inestabilidad económica y limitaciones personales.</p>
+</div>
+
+<!-- VIDEO -->
+<div class="card">
+  <h3>Reflexiona</h3>
+  <div class="media">
+      <iframe height="220" src="https://www.youtube.com/embed/1fueZCTYkpA"></iframe>
+  </div>
+</div>
+
+<!-- BOTONES -->
+<a href="#" class="btn">Ver causas</a>
+<a href="#" class="btn">Ver consecuencias</a>
+<a href="#" class="btn">Ver testimonios</a>
+<a href="#" class="btn">Prevención</a>
+
+</div>
+
+<div class="space"></div>
+
+<!-- MENÚ INFERIOR -->
+<div class="bottom-nav">
+  <a href="#inicio">Inicio</a>
+  <a href="#causas">Causas</a>
+  <a href="#prevencion">Prevención</a>
+  <a href="#apoyos">Apoyos</a>
+</div>
+
+<!-- VIDEO -->
+<div class="card">
+
+
+<!-- VIDEO -->
+<div class="video-full">
+  <h3>    V I D E O     E X P L I C A T I V O</h3>
+  <div class="media">
+    <iframe 
+      src="https://drive.google.com/file/d/1V2L-Mzoft5nNH0M_aw4h1E2ggsNO929f/preview"
+      allow="autoplay; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<!-- MENÚ INFERIOR -->
+<div class="bottom-nav">
+  <a href="#inicio">Inicio</a>
+  <a href="#causas">Causas</a>
+  <a href="#prevencion">Prevención</a>
+  <a href="#apoyos">Apoyos</a>
+</div>
+
+</body>
+</html>
