@@ -1,2 +1,2 @@
 # CECYTEM-Mi-experiencia-escolar-puede-mejorar-la-tuya
-P
+La etapa escolar es una de las más importantes en la vida de cualquier persona, ya que no solo se adquieren conocimientos académicos, sino también experiencias que forman el carácter y la manera de enfrentar los retos. A lo largo de mi trayectoria escolar he vivido momentos buenos y difíciles que me han dejado aprendizajes valiosos. Por eso, compartir mi experiencia puede ayudarte a evitar errores, aprovechar mejor tu tiempo y encontrar formas más efectivas de estudiar y convivir con los demás. Mi objetivo es que, a partir de lo que yo viví, tú puedas construir una experiencia escolar más positiva, organizada y exitosa.
