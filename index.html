@@ -170,6 +170,8 @@ img{
 
 <a href="Causas.html">Causas</a>
 
+  <!-- AUTO SABOTAJE -->
+
 <a href="#" onclick="toggleSubmenu(event,'auto')">Auto sabotaje ▼</a>
 
   <div class="submenu" id="auto">
@@ -177,7 +179,11 @@ img{
     <a href="autosabotaje2.html">Ejemplos</a>
   </div>
 
+  <!-- CONSECUENCIAS -->
+
 <a href="consecuencias.html">Consecuencias</a>
+
+  <!-- PREVENCIÓN -->
 
 <a href="#" onclick="toggleSubmenu(event,'prev')">Prevención ▼</a>
 
@@ -185,6 +191,8 @@ img{
     <a href="prevencion.html">Estrategias</a>
     <a href="apoyo.html">Apoyo</a>
   </div>
+
+  <!-- LINKS NORMALES -->
 
 <a href="familia.html">Familia</a> <a href="recursos.html">Recursos</a>
 
@@ -197,10 +205,22 @@ function toggleMenu(){
 
 function toggleSubmenu(event,id){
   event.preventDefault();
-  document.getElementById(id).classList.toggle("show");
+
+  const submenu = document.getElementById(id);
+
+  // Cierra otros submenús
+  document.querySelectorAll(".submenu").forEach(el => {
+    if(el !== submenu){
+      el.classList.remove("show");
+    }
+  });
+
+  submenu.classList.toggle("show");
 }
 </script>
 
 </body>
 </html>
+
+
 
