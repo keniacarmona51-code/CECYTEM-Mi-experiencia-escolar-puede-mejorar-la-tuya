@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -13,16 +14,16 @@
 body{
   margin:0;
   font-family:'Poppins', sans-serif;
-  background: linear-gradient(120deg,#4facfe,#ff7eb3);
+  background: linear-gradient(120deg,#ff9a9e,#fad0c4);
   overflow-x:hidden;
 }
 
-/* FORMAS */
+/* FORMAS DECORATIVAS */
 body::before, body::after{
   content:"";
   position:fixed;
   border-radius:50%;
-  background:#ffffff20;
+  background:#ffffff30;
 }
 
 body::before{
@@ -67,21 +68,21 @@ img{
   box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* MENÚ */
+/* BOTÓN MENÚ */
 .menu-btn{
   position:fixed;
   bottom:20px;
   right:20px;
-  background:#ff7eb3;
+  background:#ff6f91;
   color:white;
   font-size:25px;
-  padding:10px 15px;
+  padding:12px 16px;
   border-radius:50%;
   cursor:pointer;
   z-index:1000;
 }
 
-/* NAVBAR */
+/* MENÚ */
 .navbar{
   position:fixed;
   bottom:80px;
@@ -95,26 +96,44 @@ img{
   backdrop-filter:blur(10px);
 }
 
-/* ACTIVO */
 .navbar.show{
   display:flex;
 }
 
+/* LINKS */
 .navbar a{
   text-decoration:none;
   color:white;
-  background:rgba(255,255,255,0.2);
-  padding:8px 12px;
+  background:rgba(255,255,255,0.25);
+  padding:10px;
   border-radius:15px;
-  font-size:12px;
+  font-size:13px;
+  transition:0.3s;
 }
 
 .navbar a:hover{
   background:white;
-  color:#ff7eb3;
+  color:#ff6f91;
+}
+
+/* SUBMENÚ */
+.submenu{
+  display:none;
+  flex-direction:column;
+  margin-left:10px;
+}
+
+.submenu a{
+  font-size:12px;
+  background:rgba(255,255,255,0.15);
+}
+
+.submenu.show{
+  display:flex;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -142,23 +161,46 @@ img{
 </div>
 
 <!-- BOTÓN -->
+
 <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
 <!-- MENÚ -->
+
 <div class="navbar" id="menu">
-  <a href="Cusas.html">Causas</a>
-  <a href="autosabotaje.html">Auto sabotaje</a>
-  <a href="consecuencias">consecuencias</a>
-  <a href="prevencion.html">Prevención</a>
-  <a href="familia.html">Familia</a>
-  <a href="recursos.html">Recursos</a>
+
+<a href="Causas.html">Causas</a>
+
+<a href="#" onclick="toggleSubmenu(event,'auto')">Auto sabotaje ▼</a>
+
+  <div class="submenu" id="auto">
+    <a href="autosabotaje.html">¿Qué es?</a>
+    <a href="autosabotaje2.html">Ejemplos</a>
+  </div>
+
+<a href="consecuencias.html">Consecuencias</a>
+
+<a href="#" onclick="toggleSubmenu(event,'prev')">Prevención ▼</a>
+
+  <div class="submenu" id="prev">
+    <a href="prevencion.html">Estrategias</a>
+    <a href="apoyo.html">Apoyo</a>
+  </div>
+
+<a href="familia.html">Familia</a> <a href="recursos.html">Recursos</a>
+
 </div>
 
 <script>
 function toggleMenu(){
   document.getElementById("menu").classList.toggle("show");
 }
+
+function toggleSubmenu(event,id){
+  event.preventDefault();
+  document.getElementById(id).classList.toggle("show");
+}
 </script>
 
 </body>
 </html>
+
