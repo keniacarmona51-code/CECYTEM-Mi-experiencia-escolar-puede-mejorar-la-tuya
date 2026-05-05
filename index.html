@@ -14,13 +14,18 @@ body{
   margin:0;
   font-family:'Poppins', sans-serif;
   background: linear-gradient(120deg,#ff9a9e,#fad0c4);
+  color:white;
 }
 
 /* CONTENIDO */
 .container{
   padding:30px 15px 100px;
   text-align:center;
-  color:white;
+}
+
+/* TÍTULO */
+h1{
+  font-size:28px;
 }
 
 /* TARJETAS */
@@ -31,9 +36,16 @@ body{
   padding:20px;
   max-width:500px;
   border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* 💗 NAVBAR NORMAL (LAPTOP) */
+p{
+  text-align:justify;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* 💗 NAVBAR LAPTOP */
 .navbar{
   position:fixed;
   bottom:20px;
@@ -55,7 +67,7 @@ body{
   background:linear-gradient(135deg,#ff7eb3,#ff4d94);
 }
 
-/* BOTÓN MENÚ (OCULTO EN LAPTOP) */
+/* BOTÓN CELULAR */
 .menu-btn{
   display:none;
   position:fixed;
@@ -67,13 +79,11 @@ body{
   padding:10px 15px;
   border-radius:50%;
   cursor:pointer;
-  z-index:1000;
 }
 
-/* 📱 MODO CELULAR */
+/* 📱 RESPONSIVE */
 @media(max-width:768px){
 
-  /* ocultar menú normal */
   .navbar{
     display:none;
     flex-direction:column;
@@ -83,14 +93,12 @@ body{
     transform:none;
   }
 
-  /* mostrar botón */
-  .menu-btn{
-    display:block;
-  }
-
-  /* cuando se abre */
   .navbar.show{
     display:flex;
+  }
+
+  .menu-btn{
+    display:block;
   }
 
 }
@@ -105,7 +113,36 @@ body{
   <h1>MI EXPERIENCIA ESCOLAR</h1>
 
   <div class="card">
-    <p>La escuela no siempre es fácil...</p>
+    <p>
+      La escuela no siempre es fácil. A veces se convierte en un lugar donde el estrés,
+      la presión y los problemas personales pesan más que las ganas de aprender.
+      Muchos estudiantes pasan por momentos en los que sienten que no encajan
+      o que no pueden con todo.
+    </p>
+  </div>
+
+  <div class="card">
+    <p>
+      El abandono escolar ocurre cuando un estudiante deja sus estudios antes de terminarlos.
+      Esto puede suceder por distintas razones como problemas económicos, falta de apoyo,
+      dificultades emocionales o incluso por sentirse desmotivado.
+    </p>
+  </div>
+
+  <div class="card">
+    <p>
+      En muchos casos, el abandono no es una decisión repentina, sino el resultado
+      de muchas pequeñas situaciones acumuladas. El cansancio mental, el sobrepensar
+      y el autosabotaje también pueden influir más de lo que parece.
+    </p>
+  </div>
+
+  <div class="card">
+    <p>
+      Este proyecto busca crear conciencia y demostrar que sí existen soluciones.
+      Con apoyo, comprensión y motivación, es posible seguir adelante y construir
+      un mejor futuro.
+    </p>
   </div>
 
 </div>
@@ -115,9 +152,9 @@ body{
 
 <!-- MENÚ -->
 <div class="navbar" id="menu">
-  <a href="Cusas.html">Causas</a>
+  <a href="causas.html">Causas</a>
   <a href="consecuencias.html">Consecuencias</a>
-  <a href="autosabotaje.html">autosabotaje</a>
+  <a href="MAX.html">Upside Down</a>
   <a href="prevencion.html">Prevención</a>
   <a href="familia.html">Familia</a>
   <a href="recursos.html">Recursos</a>
