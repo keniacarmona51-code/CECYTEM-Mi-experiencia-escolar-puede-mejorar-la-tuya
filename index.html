@@ -17,25 +17,24 @@ body{
   overflow-x:hidden;
 }
 
-/* FORMAS DECORATIVAS */
-body::before{
+/* FORMAS */
+body::before, body::after{
   content:"";
   position:fixed;
+  border-radius:50%;
+  background:#ffffff20;
+}
+
+body::before{
   width:500px;
   height:500px;
-  background:#ffffff20;
-  border-radius:50%;
   top:-150px;
   left:-150px;
 }
 
 body::after{
-  content:"";
-  position:fixed;
   width:400px;
   height:400px;
-  background:#ffffff20;
-  border-radius:50%;
   bottom:-150px;
   right:-150px;
 }
@@ -49,10 +48,8 @@ body::after{
 
 h1{
   font-size:28px;
-  margin-bottom:10px;
 }
 
-/* IMAGEN */
 img{
   width:120px;
   border-radius:50%;
@@ -60,7 +57,6 @@ img{
   border:4px solid white;
 }
 
-/* TARJETAS */
 .card{
   background:white;
   color:#333;
@@ -69,40 +65,48 @@ img{
   max-width:500px;
   border-radius:20px;
   box-shadow:0 10px 25px rgba(0,0,0,0.2);
-  transform:rotate(-1deg);
 }
 
-.card:nth-child(3){
-  transform:rotate(1deg);
-}
-
-/* TEXTO */
-p{
-  text-align:justify;
-  font-size:14px;
-}
-
-/* MENÚ INFERIOR */
-.navbar{
+/* MENÚ */
+.menu-btn{
   position:fixed;
   bottom:20px;
-  left:50%;
-  transform:translateX(-50%);
-  display:flex;
+  right:20px;
+  background:#ff7eb3;
+  color:white;
+  font-size:25px;
+  padding:10px 15px;
+  border-radius:50%;
+  cursor:pointer;
+  z-index:1000;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  bottom:80px;
+  right:20px;
+  display:none;
+  flex-direction:column;
   gap:10px;
   background:rgba(255,255,255,0.2);
-  padding:10px 15px;
-  border-radius:30px;
+  padding:15px;
+  border-radius:20px;
   backdrop-filter:blur(10px);
+}
+
+/* ACTIVO */
+.navbar.show{
+  display:flex;
 }
 
 .navbar a{
   text-decoration:none;
   color:white;
-  font-size:12px;
+  background:rgba(255,255,255,0.2);
   padding:8px 12px;
   border-radius:15px;
-  transition:0.3s;
+  font-size:12px;
 }
 
 .navbar a:hover{
@@ -115,7 +119,6 @@ p{
 
 <body>
 
-<!-- CONTENIDO PRINCIPAL -->
 <div class="container">
 
   <h1>MI EXPERIENCIA ESCOLAR</h1>
@@ -132,29 +135,30 @@ p{
   <div class="card">
     <p>
       El abandono escolar ocurre cuando un estudiante deja sus estudios antes de terminarlos.
-      Muchas veces no es por falta de interés, sino por situaciones difíciles como problemas
-      económicos, familiares o emocionales.
-    </p>
-  </div>
-
-  <div class="card">
-    <p>
-      Este proyecto busca crear conciencia y demostrar que sí existen soluciones. Con apoyo,
-      comprensión y motivación, es posible seguir adelante y construir un mejor futuro.
+      Muchas veces no es por falta de interés, sino por situaciones difíciles.
     </p>
   </div>
 
 </div>
 
-<!-- MENÚ INFERIOR -->
-<div class="navbar">
-  <a href="Cusas.html">Cusas</a>
+<!-- BOTÓN -->
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<!-- MENÚ -->
+<div class="navbar" id="menu">
+  <a href="Cusas.html">Causas</a>
   <a href="consecuencias.html">Consecuencias</a>
   <a href="MAX.html">Upside Down</a>
   <a href="prevencion.html">Prevención</a>
   <a href="familia.html">Familia</a>
   <a href="recursos.html">Recursos</a>
 </div>
+
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
