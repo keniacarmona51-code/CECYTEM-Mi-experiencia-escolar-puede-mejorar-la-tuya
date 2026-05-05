@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Causas</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* GENERAL */
+body{
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background: linear-gradient(120deg,#4facfe,#ff7eb3);
+  overflow-x:hidden;
+}
+
+/* FORMAS DECORATIVAS */
+body::before{
+  content:"";
+  position:fixed;
+  width:500px;
+  height:500px;
+  background:#ffffff20;
+  border-radius:50%;
+  top:-150px;
+  left:-150px;
+}
+
+body::after{
+  content:"";
+  position:fixed;
+  width:400px;
+  height:400px;
+  background:#ffffff20;
+  border-radius:50%;
+  bottom:-150px;
+  right:-150px;
+}
+
+/* CONTENIDO */
+.container{
+  padding:30px 15px 100px;
+  text-align:center;
+  color:white;
+}
+
+h1{
+  font-size:28px;
+}
+
+/* TARJETAS */
+.card{
+  background:white;
+  color:#333;
+  margin:20px auto;
+  padding:20px;
+  max-width:500px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  transform:rotate(-1deg);
+}
+
+.card:nth-child(3){
+  transform:rotate(1deg);
+}
+
+/* TEXTO */
+p{
+  text-align:justify;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* IMÁGENES Y VIDEO */
+img, iframe{
+  width:100%;
+  max-width:300px;
+  border-radius:20px;
+  margin-top:10px;
+}
+
+/* MENÚ INFERIOR */
+.navbar{
+  position:fixed;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:10px;
+  background:rgba(255,255,255,0.2);
+  padding:10px 15px;
+  border-radius:30px;
+  backdrop-filter:blur(10px);
+}
+
+.navbar a{
+  text-decoration:none;
+  color:white;
+  font-size:12px;
+  padding:8px 12px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.navbar a:hover{
+  background:white;
+  color:#ff7eb3;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>¿POR QUÉ OCURRE?</h1>
+
+  <div class="card">
+    <p>
+      El abandono escolar no sucede por una sola razón. En muchos casos, los estudiantes
+      enfrentan problemas económicos que los obligan a trabajar y dejar sus estudios.
+    </p>
+  </div>
+
+  <div class="card">
+    <p>
+      También influye la falta de motivación. Cuando una persona siente que no puede lograrlo
+      o que lo que aprende no tiene sentido, poco a poco pierde el interés en continuar.
+    </p>
+  </div>
+
+  <div class="card">
+    <p>
+      Los problemas familiares, como conflictos en casa o la falta de apoyo emocional,
+      afectan directamente el rendimiento escolar y pueden llevar al abandono.
+    </p>
+
+    <img src="CAUSAS.jpg" alt="Causas">
+
+    <iframe 
+    src="https://drive.google.com/file/d/1C6GX1sUhDYqy1ishBj_MmomXP6rkMFlk/preview"
+    width="600"
+    height="450"
+    allow="autoplay">
+    </iframe>
+  </div>
+
+</div>
+
+<!-- MENÚ INFERIOR -->
+<div class="navbar">
+  <a href="index.html">Inicio</a>
+
+</div>
+
+</body>
+</html>
