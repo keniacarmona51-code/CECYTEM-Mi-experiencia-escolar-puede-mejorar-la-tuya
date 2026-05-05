@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consecuencias</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* FONDO */
+body{
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background: linear-gradient(135deg,#4facfe,#6a11cb,#ff7eb3);
+  color:white;
+  text-align:center;
+  overflow-x:hidden;
+}
+
+/* BURBUJAS */
+body::before, body::after{
+  content:"";
+  position:fixed;
+  border-radius:50%;
+  background:rgba(255,255,255,0.1);
+}
+
+body::before{
+  width:500px;
+  height:500px;
+  top:-150px;
+  left:-150px;
+}
+
+body::after{
+  width:400px;
+  height:400px;
+  bottom:-150px;
+  right:-150px;
+}
+
+/* CONTENEDOR */
+.container{
+  padding:30px 15px 120px;
+}
+
+/* TÍTULO */
+h1{
+  font-size:28px;
+  text-shadow:0 0 10px rgba(255,255,255,0.7);
+}
+
+/* TARJETAS */
+.card{
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(15px);
+  margin:20px auto;
+  padding:20px;
+  max-width:500px;
+  border-radius:25px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+  animation:fadeUp 1s ease;
+}
+
+/* TEXTO */
+p{
+  text-align:justify;
+  line-height:1.6;
+  font-size:14px;
+}
+
+/* LISTA */
+ul{
+  text-align:left;
+  line-height:1.6;
+}
+
+/* IMAGEN */
+img{
+  width:100%;
+  max-width:300px;
+  border-radius:20px;
+  margin-top:15px;
+}
+
+/* VIDEO */
+iframe{
+  width:100%;
+  max-width:400px;
+  height:220px;
+  border-radius:20px;
+  margin-top:15px;
+}
+
+/* BOTÓN */
+a{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 22px;
+  border-radius:50px;
+  background: linear-gradient(135deg,#ff7eb3,#4facfe);
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+a:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 10px rgba(255,255,255,0.6);
+}
+
+/* ANIMACIÓN */
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+  .container{
+    padding:20px 10px 120px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>CONSECUENCIAS DEL ABANDONO ESCOLAR</h1>
+
+<div class="card">
+<p>
+El abandono escolar tiene un impacto directo en el futuro de las personas.
+Al dejar los estudios, se reducen significativamente las oportunidades
+de acceder a empleos bien remunerados y estables.
+</p>
+</div>
+
+<div class="card">
+<p>
+A nivel económico, muchas personas que abandonan la escuela enfrentan
+trabajos mal pagados o informales, lo que dificulta su crecimiento
+y estabilidad a largo plazo.
+</p>
+</div>
+
+<div class="card">
+<p>
+También existen consecuencias emocionales. El abandono escolar puede
+afectar la autoestima, generando inseguridad y la sensación de no ser
+capaz de lograr metas importantes.
+</p>
+</div>
+
+<div class="card">
+<p>
+En el ámbito social, puede provocar aislamiento y limitar las oportunidades
+de desarrollo personal. La educación no solo forma conocimientos,
+también construye habilidades para la vida.
+</p>
+
+<img src="im1.jpg" alt="Consecuencias">
+
+<iframe 
+src="https://drive.google.com/file/d/1WtPAkKfn9p2FF5PxG9MsN1si1O1YJG0v/preview"
+allow="autoplay">
+</iframe>
+
+</div>
+
+<div class="card">
+<p>
+Entender estas consecuencias es importante para tomar conciencia.
+El abandono escolar no solo afecta el presente, también impacta
+el futuro de las personas y de la sociedad en general.
+</p>
+</div>
+
+<a href="./index.html" onclick="location.href='./index.html'">Volver al inicio</a>
+
+</div>
+
+</body>
+</html>
