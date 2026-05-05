@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobrepensar y Autosabotaje</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background: linear-gradient(135deg,#4facfe,#6a11cb,#ff7eb3);
+  overflow-x:hidden;
+}
+
+body::before, body::after{
+  content:"";
+  position:fixed;
+  border-radius:50%;
+  background:rgba(255,255,255,0.1);
+}
+
+body::before{
+  width:500px;
+  height:500px;
+  top:-150px;
+  left:-150px;
+}
+
+body::after{
+  width:400px;
+  height:400px;
+  bottom:-150px;
+  right:-150px;
+}
+
+.container{
+  padding:30px 15px 120px;
+  text-align:center;
+  color:white;
+}
+
+h1{
+  font-size:30px;
+  font-weight:800;
+  text-shadow:0 0 10px rgba(255,255,255,0.8);
+  animation:fadeIn 1s ease;
+}
+
+.card{
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(15px);
+  margin:20px auto;
+  padding:20px;
+  max-width:500px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+  transition:0.3s;
+  animation:fadeUp 1s ease;
+}
+
+.card:hover{
+  transform:translateY(-10px) scale(1.03);
+}
+
+p{
+  text-align:justify;
+  font-size:14px;
+  line-height:1.6;
+}
+
+img{
+  width:100%;
+  max-width:280px;
+  border-radius:20px;
+  margin-top:10px;
+}
+
+iframe{
+  width:100%;
+  max-width:400px;
+  height:220px;
+  border-radius:20px;
+  margin-top:15px;
+}
+
+.navbar{
+  position:fixed;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:10px;
+  background:rgba(255,255,255,0.2);
+  padding:12px 18px;
+  border-radius:30px;
+  backdrop-filter:blur(15px);
+}
+
+.navbar a{
+  text-decoration:none;
+  color:white;
+  font-size:12px;
+  padding:8px 14px;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.navbar a:hover{
+  background:white;
+  color:#ff7eb3;
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>SOBREPENSAR & AUTOSABOTAJE</h1>
+
+  <div class="card">
+    <p>
+      En la vida escolar, sobrepensar puede volverse un problema constante.
+      Pensar demasiado en tareas, exámenes o en “no ser suficiente” genera
+      ansiedad y hace que todo se sienta más difícil de lo que realmente es.
+    </p>
+  </div>
+
+  <div class="card">
+    <p>
+      Poco a poco, esos pensamientos se convierten en autosabotaje:
+      dejas tareas para después, evitas participar, o empiezas a creer
+      que no vale la pena esforzarte porque igual vas a fallar.
+    </p>
+  </div>
+
+  <div class="card">
+    <p>
+      Cuando esto se repite constantemente, puede llevar al abandono escolar.
+      No porque el estudiante no quiera aprender, sino porque se siente
+      cansado mentalmente, desmotivado y atrapado en sus propios pensamientos.
+    </p>
+
+    <img src="MENTE.jpg" alt="Sobrepensar">
+
+    <iframe src="https://www.youtube.com/embed/8GQZuzIdeQQ" allowfullscreen></iframe>
+  </div>
+
+  <div class="card">
+    <p>
+      Entender esta conexión es importante. El abandono escolar no siempre
+      es por falta de capacidad, muchas veces es por lo que ocurre dentro
+      de la mente. Aprender a manejar estos pensamientos puede hacer
+      la diferencia entre rendirse o seguir adelante.
+    </p>
+  </div>
+
+</div>
+
+<div class="navbar">
+  <a href="index.html">Inicio</a>
+</div>
+
+</body>
+</html>
