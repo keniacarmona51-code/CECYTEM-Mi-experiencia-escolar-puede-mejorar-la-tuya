@@ -42,7 +42,7 @@ body::after{
 
 /* CONTENIDO */
 .container{
-  padding:30px 15px 100px;
+  padding:30px 15px 120px;
   text-align:center;
   color:white;
 }
@@ -74,12 +74,27 @@ p{
   line-height:1.6;
 }
 
-/* IMÁGENES Y VIDEO */
-img, iframe{
+/* IMÁGENES */
+img{
   width:100%;
   max-width:300px;
   border-radius:20px;
   margin-top:10px;
+}
+
+/* VIDEO */
+.video-container{
+  width:100%;
+  max-width:500px;
+  margin:auto;
+}
+
+.video-container iframe{
+  width:100%;
+  height:280px;
+  border:none;
+  border-radius:20px;
+  margin-top:15px;
 }
 
 /* MENÚ INFERIOR */
@@ -140,57 +155,25 @@ img, iframe{
     </p>
 
     <img src="CAUSAS.webp" alt="Causas">
-
-   <div class="card">
-  <h2>Abandono Escolar</h2>
-
- <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abandono Escolar</title>
-
-  <style>
-    body{
-      margin:0;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-      background:#111;
-    }
-
-    .video-container{
-      width:90%;
-      max-width:900px;
-      aspect-ratio:16/9;
-    }
-
-    iframe{
-      width:100%;
-      height:100%;
-      border:none;
-      border-radius:12px;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="video-container">
-    <iframe
-      src="https://drive.google.com/file/d/1pFMHm_rI_lQvr4ZeMN5__u_c_rKjMKTZ/preview"
-      allow="autoplay"
-      allowfullscreen>
-    </iframe>
   </div>
 
-</body>
-</html>
+  <div class="card">
+    <h2>Abandono Escolar</h2>
+
+    <div class="video-container">
+      <iframe
+        src="https://drive.google.com/file/d/1pFMHm_rI_lQvr4ZeMN5__u_c_rKjMKTZ/preview"
+        allow="autoplay"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+</div>
 
 <!-- MENÚ INFERIOR -->
 <div class="navbar">
-  <a href="./index.html" onclick="location.href='./index.html'">Inicio</a>
+  <a href="index.html">Inicio</a>
 </div>
 
 </body>
